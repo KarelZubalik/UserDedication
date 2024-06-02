@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="20">
+    <test name="LongTest" parallel="methods" thread-count="20">
+        <classes>
+            <class name="LongTest"/>
+        </classes>
+    </test>
+    <test name="Test" parallel="methods" thread-count="20">
+        <classes>
+            <class name="AnotherTest"/>
+        </classes>
+    </test>
+    <test name="SpecifiedTechnicianTest" parallel="methods" thread-count="20">
+        <classes>
+            <class name="SpecifiedTechnicianTest"/>
+        </classes>
+    </test>
+</suite>

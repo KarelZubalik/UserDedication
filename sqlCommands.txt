@@ -1,0 +1,15 @@
+CREATE TABLE `user_dedication` (
+  `id` bigint NOT NULL AUTO_INCREMENT,
+  `USER` varchar(45) DEFAULT NULL,
+  `RESERVED_UNTIL` datetime DEFAULT NULL,
+  `TESTNAME` varchar(45) DEFAULT NULL,
+  `UNIVERSAL_PICK` tinyint DEFAULT '1',
+  PRIMARY KEY (`id`));
+
+  CREATE TABLE `userdedication`.`dedication_logs` (
+    `iddedication_logs` INT NOT NULL,
+    `USER` VARCHAR(45) NULL,
+    `NAME_OF_TEST` VARCHAR(45) NULL,
+    `UID` VARCHAR(45) NULL,
+    `TIME_OF_SET` DATETIME NULL,
+    PRIMARY KEY (`iddedication_logs`));
